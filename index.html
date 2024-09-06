@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form Validation</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+  </div>
+    <div class="form-container">
+      <h2>Compatibility Assessment Form</h2>
+      <form action="#" method="POST">
+        <!-- Identities Section -->
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="18" required />
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender Identity:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="non-binary">Non-binary</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- Religious Views Section -->
+        <div class="form-group">
+          <label for="religion">Religious Views:</label>
+          <input
+            type="text"
+            id="religion"
+            name="religion"
+            placeholder="E.g., Christian, Muslim, Atheist"
+          />
+        </div>
+
+        <!-- Financial Status Section -->
+        <div class="form-group">
+          <label for="financialStatus">Financial Status:</label>
+          <select id="financialStatus" name="financialStatus" required>
+            <option value="">Select</option>
+            <option value="stable">Stable</option>
+            <option value="improving">Improving</option>
+            <option value="struggling">Struggling</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+          </select>
+        </div>
+
+        <!-- Personal Traits Section -->
+        <div class="form-group">
+          <label for="generalCharacteristics"
+            >General Characteristics (Describe Yourself):</label
+          >
+          <textarea
+            id="generalCharacteristics"
+            name="generalCharacteristics"
+            rows="4"
+            placeholder="E.g., introverted, ambitious, caring"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="zodiacSign">Zodiac Sign:</label>
+          <select id="zodiacSign" name="zodiacSign">
+            <option value="">Select</option>
+            <option value="aries">Aries</option>
+            <option value="taurus">Taurus</option>
+            <option value="gemini">Gemini</option>
+            <option value="cancer">Cancer</option>
+            <option value="leo">Leo</option>
+            <option value="virgo">Virgo</option>
+            <option value="libra">Libra</option>
+            <option value="scorpio">Scorpio</option>
+            <option value="sagittarius">Sagittarius</option>
+            <option value="capricorn">Capricorn</option>
+            <option value="aquarius">Aquarius</option>
+            <option value="pisces">Pisces</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mbti">MBTI Personality Type:</label>
+          <select id="mbti" name="mbti">
+            <option value="">Select</option>
+            <option value="istj">ISTJ</option>
+            <option value="isfj">ISFJ</option>
+            <option value="infj">INFJ</option>
+            <option value="intj">INTJ</option>
+            <option value="istp">ISTP</option>
+            <option value="isfp">ISFP</option>
+            <option value="infp">INFP</option>
+            <option value="intp">INTP</option>
+            <option value="estp">ESTP</option>
+            <option value="esfp">ESFP</option>
+            <option value="enfp">ENFP</option>
+            <option value="entp">ENTP</option>
+            <option value="estj">ESTJ</option>
+            <option value="esfj">ESFJ</option>
+            <option value="enfj">ENFJ</option>
+            <option value="entj">ENTJ</option>
+          </select>
+        </div>
+
+        <!-- Submission Section -->
+        <div class="form-actions">
+          <button type="submit">Submit</button>
+        </div>
+
+        <div class="note">
+          Note: This form is for assessment purposes only and does not guarantee
+          compatibility.
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
